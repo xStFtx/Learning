@@ -1,2 +1,38 @@
+# Build directories
+build/
+bin/
+lib/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+*.cmake
+*.a
+*.so
+*.dll
+*.dylib
 *.exe
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Generated test outputs
+tests/output/
+examples/output
+
 test.cpp
