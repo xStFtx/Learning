@@ -12,12 +12,21 @@ else()
     add_compile_options(-Wall -Wextra -Wpedantic -Werror)
 endif()
 
-add_library(LALib INTERFACE)  # header-only library
-
-# Specify public include directories for consumers
+# Header-only library
+add_library(LALib INTERFACE)
 target_include_directories(LALib INTERFACE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
+# Example executable
 add_executable(example examples/example_usage.cpp)
 target_link_libraries(example PRIVATE LALib)
+
+# Tests
+add_executable(test
+    tests/main.cpp
+    tests/test_addition.cpp
+    tests/test_transpose.cpp
+    tests/test_edge_cases.cpp
+)
+target_link_libraries(test PRIVATE LALib)

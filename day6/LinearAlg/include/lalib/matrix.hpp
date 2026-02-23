@@ -20,6 +20,8 @@ public:
     void set(unsigned int r, unsigned int c, T value);
     // overload the + operator
     Matrix<T> operator+(const Matrix<T>& other) const;
+    //In-place addition
+    Matrix<T>& operator+=(const Matrix<T>& other);
     //transpose matrix; swap rows with cols
     Matrix<T> transpose() const;
 private:
