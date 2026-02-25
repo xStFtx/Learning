@@ -3,10 +3,13 @@
 ## Memory Model
 
 - Stack vs Heap
-- Storage duration
-- new/delete
+- Storage duration - lives as long as the object exists
+- new/delete - new allocates an array on the heap. delete frees it. forgetting delete causes memory leaks and UB
 - Memory layout
-- Undefined behavior
+- Undefined behavior (UB) 
+
+Capacity doubling -> amortized O(1) push_back
+size_ vs cap_ -> logical size vs allocated memory
 
 Exercise:
 - Implement dynamic array using raw pointers.
