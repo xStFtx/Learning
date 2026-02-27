@@ -21,8 +21,7 @@ So this Day 9 learning is for me to fully explore and test what it really is and
 
 Full ownership of an object's resources.
 
-After further analyses I saw that I already did RAII in my day7 dyn_arr. It is when you have allocate in the constructor and free in the destructor. I also ahve a deep copy in my copy constructor. I know my dyn_arr isn't perfect but it I am still learning the memory models and C++ has so much bloat and nonsense in my opinion. I am still green and new to C++ so maybe I am wrong.
-
+After further analyses I saw that I already did RAII in my day7 dyn_arr. It is when you have allocate in the constructor and free in the destructor. I also ahve a deep copy in my copy constructor. I know my dyn_arr isn't perfect but it I am still learning the memory models.
 
 ## Copy assignment and making deep copies
 Allocate first to preserve the original object in case allocation throws, ensuring strong exception safety.
