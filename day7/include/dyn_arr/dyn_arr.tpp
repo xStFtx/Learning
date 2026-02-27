@@ -6,9 +6,7 @@ namespace dyn_arr {
 
 //Constructor
 template <typename T>
-DynArr<T>::DynArr() : cap_(0), size_(0) {
-    data = new T[cap_];
-}
+DynArr<T>::DynArr() : cap_(0), size_(0), data(nullptr) {} // using nullptr rather than new T[0]
 
 //Destructor
 template <typename T>
