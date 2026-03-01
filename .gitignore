@@ -36,3 +36,5 @@ tests/output/
 examples/output
 
 test.cpp
+
+*.o
